@@ -1,0 +1,44 @@
+Configuração do ambiente
+1) Instalar Venv
+python package
+
+2) Cria venv
+python -m venv
+venv/Scripts/activate.bat
+source venv/bin/activate
+
+3) Instalar Django
+pip install django
+
+4)Iniciar projeto
+django-admin startproject nome_do_projeto_de_vcs
+
+5)Executar Projeto
+cd nome_do_projeto_de_vcs
+python manage.py runserver
+
+6)Criar Aplicação
+python manage.py startapp nome_do_app_de_vcs
+
+7)Criar pasta templates na raiz do projeto e configurar settings.py
+
+8)Configurar arquivos estaticos
+a)instalar lib static
+pip install dj_static
+
+b)colocar cling e mediacling no wsgi e asgi
+c)criar pasta statics e configurar no settings
+python manage.py collectstatic
+
+c)configura pastas criadas no settings.py
+
+9)Configurar o Django Admin
+a) preparar as migrações do banco de dados
+python manage.py makemigrations
+
+b)aplica as migrações no banco
+python manage.py migrate
+
+c)criar um super usuário
+python manage.py createsuperuser
+
