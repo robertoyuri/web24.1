@@ -1,0 +1,16 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    background-color: greenyellow;
+}
+.botao{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "Arial Black";
+    height: 50px;
+    width: 250px;
+    border: 10px solid red;
+    border-radius: 50px;
+}
