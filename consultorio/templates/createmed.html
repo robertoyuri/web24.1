@@ -1,0 +1,57 @@
+{% extends 'menu.html' %}
+{% load static %}
+{% block title %}Cadastrar Medico{% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Nome</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Nome Completo" value="Mark" required>
+            </div>
+            <div class="col-md-8 mb-3">
+                <label for="validationCustom02">Data de Nascimento</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="DD/MM/AAAA" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Endereço</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Endereço" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom04">Cidade</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="Cidade" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom05">CEP</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-4">
+                <label for="validationCustom09">CRM</label>
+                <input type="text" class="form-control" id="validationCustom09" placeholder="CRM" required>
+            </div>
+            <div class="col-md-4 mb-4">
+                <label for="validationCustom06">CPF</label>
+                <input type="text" class="form-control" id="validationCustom06" placeholder="CPF" required>
+            </div>
+            <div class="col-md-4 mb-4">
+                <label for="validationCustom07">RG</label>
+                <input type="text" class="form-control" id="validationCustom07" placeholder="RG" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-4">
+                <label></label>
+                <br>
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <br>
+                <label></label>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

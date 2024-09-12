@@ -1,0 +1,55 @@
+{% extends 'menu.html' %}
+{% load static %}
+{% block title %}Cadastrar Consulta{% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Data de Nascimento</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="DD/MM/AAAA" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Hora</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Nome Completo" value="HH:MM" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom04">Medico</label>
+                <select class="form-control form-control-lg" id="validationCustom04" required>
+                    <option>Medico 1</option>
+                    <option>Medico 2</option>
+                    <option>Medico 3</option>
+                    <option>Medico 4</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom05">Paciente</label>
+                <select class="form-control form-control-lg" id="validationCustom05" required>
+                    <option>Paciente 1</option>
+                    <option>Paciente 2</option>
+                    <option>Paciente 3</option>
+                    <option>Paciente 4</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-12 mb-4">
+                <label for="validationCustom06">Prontuario</label>
+                <textarea class="form-control" id="validationCustom06" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-4">
+                <label></label>
+                <br>
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <br>
+                <label></label>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
