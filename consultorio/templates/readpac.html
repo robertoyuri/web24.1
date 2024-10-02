@@ -19,18 +19,18 @@
         </tr>
         </thead>
         <tbody>
-        {% for i in '12356789' %}
+        {% for p in pacientes %}
         <tr>
-            <th scope="col">Nome {{ i }}</th>
-            <th scope="col">Data Nascimento {{ i }}</th>
-            <th scope="col">Endereço {{ i }}</th>
-            <th scope="col">Cidade {{ i }}</th>
-            <th scope="col">CEP {{ i }}</th>
-            <th scope="col">CPF {{ i }}</th>
-            <th scope="col">RG {{ i }}</th>
-            <th scope="col">Plano de Saúde {{ i }}</th>
-            <th scope="col"><a href="updatemed/{{ i }}"><img src="{% static 'img/edit.png' %}" height="20px"></a></th>
-            <th scope="col"><a href="deletemed/{{ i }}"><img src="{% static 'img/delete.png' %}" height="20px"></a></th>
+            <th scope="col">{{ p.nome }}</th>
+            <th scope="col">{{ p.nascimento }}</th>
+            <th scope="col">{{ p.endereco }}</th>
+            <th scope="col">{{ p.cidade }}</th>
+            <th scope="col">{{ p.cep }}</th>
+            <th scope="col">{{ p.cpf }}</th>
+            <th scope="col">{{ p.rg }}</th>
+            <th scope="col">{{ p.plano }}</th>
+            <th scope="col"><a href="/consultorio/updatepac/{{ p.id }}"><img src="{% static 'img/edit.png' %}" height="20px"></a></th>
+            <th scope="col"><a href="/consultorio/deletepac/{{ p.id }}"><img src="{% static 'img/delete.png' %}" height="20px"></a></th>
         </tr>
         {% endfor %}
         </tbody>
